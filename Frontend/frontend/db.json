@@ -1,0 +1,49 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "signupUsers": [
+    {
+      "username": "test",
+      "password": "12345",
+      "id": 1
+    },
+    {
+      "username": "max",
+      "password": "90908",
+      "id": 2
+    },
+    {
+      "username": "namangupta",
+      "password": "1234",
+      "id": 3
+    },
+    {
+      "username": "naman",
+      "password": "12345",
+      "id": 4
+    },
+    {
+      "username": "kartheek",
+      "password": "12345",
+      "id": 5
+    },
+    {
+      "username": "tarang ",
+      "password": "123",
+      "id": 6
+    },
+    {
+      "username": "12344",
+      "password": "12344",
+      "id": 7
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

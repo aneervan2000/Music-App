@@ -1,0 +1,24 @@
+
+#form {
+    border: none;
+    width: 100%;
+    padding: 40px;
+
+    
+    left: 50%;
+    
+    background: rgb(180, 25, 138);
+    background: linear-gradient(
+      90deg,
+      rgb(180, 25, 138) 0%,
+      rgb(71, 156, 236) 100%
+    );
+  }
+  #form h1,h6{
+      color: white;
+  
+  }
+  label{
+      color: white;
+  }
+  

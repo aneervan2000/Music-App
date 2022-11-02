@@ -1,0 +1,64 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "signupUsers": [
+    {
+      "username": "test",
+      "password": "12345",
+      "id": 1
+    },
+    {
+      "username": "max",
+      "password": "90908",
+      "id": 2
+    },
+    {
+      "username": "namangupta",
+      "password": "1234",
+      "id": 3
+    },
+    {
+      "username": "naman",
+      "password": "12345",
+      "id": 4
+    },
+    {
+      "username": "kartheek",
+      "password": "12345",
+      "id": 5
+    },
+    {
+      "username": "tarang ",
+      "password": "123",
+      "id": 6
+    },
+    {
+      "username": "sanjeev",
+      "password": "1234",
+      "id": 7
+    },
+    {
+      "username": "naman1",
+      "password": "1234",
+      "id": 8
+    },
+    {
+      "username": "aneervan",
+      "password": "1618",
+      "id": 9
+    },
+    {
+      "username": "diya",
+      "password": "12345",
+      "id": 10
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

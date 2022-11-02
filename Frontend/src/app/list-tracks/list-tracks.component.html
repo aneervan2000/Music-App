@@ -1,0 +1,76 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="margin: 0 0 1vw 0;">
+    <div class="container-fluid">
+        <div class="navbar-brand">
+            <h1>Muzix App</h1>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" routerLink="/welcome" style="margin-left: 2vw;">Recommendations</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" routerLink="/listfavouritetracks" style="text-shadow: 0px 0px 1vw #FFFFFF; margin-left: 2vw;">Favourite Tracks</a>
+                </li>
+
+
+                <li class="nav-item">
+                    <div class="justify-content-md-center">
+                        <a class="nav-link active" aria-current="page" routerLink="/search" style="margin-left: 2vw;">Search tracks</a>
+                    </div>
+                </li>
+            </ul>
+            <!--<h3 style="color: white;">Sayantan Ghosh</h3>-->
+
+            <div class="d-flex">
+                <button class="btn btn-danger mx-2" routerLink="/login"  >Log out</button>
+            </div>
+
+
+        </div>
+    </div>
+</nav>
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-20">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col" *ngFor="let track of tracks">
+                    <div style="width: 18rem; height: 35rem;" class="card shadow-sm">
+                        <img src={{track.albumImageUrl}}>
+                        <div class="card-body">
+                            <p class="card-text">
+                                <strong><small class="text-muted">Album Name : {{track.albumName}}</small></strong>
+                            </p>
+                            <p class="card-text">Artist : {{track.artistName}}</p>
+                            <p class="h4">
+                                {{track.name}} </p>
+                            <p class="h5">
+                                <a class="badge bg-success mx-2" href={{track.trackUrl}}>track url</a>
+                                <span class="badge bg-success mx-2" *ngIf="isDurationProvided(track.duration)">
+                                    {{track.duration}}
+                                </span>
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-danger"
+                                        (click)="removeTrack(track)">Remove from favourite list</button>
+                                    <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View Details</button> -->
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
