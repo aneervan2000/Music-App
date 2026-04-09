@@ -23,4 +23,4 @@ Favourite Playlist, Recommendations for a playlist. Data can be fetched from htt
 2. Front end : Angular
 3. Data Store : MongoDB
 4. Testing : JUnit
-5. Container: Docke
+5. Container: Docker
